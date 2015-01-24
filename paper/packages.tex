@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Community-driven Obfuscation Paper
+%
+% This is packages.tex. It includes usepackage commands and configuration
+% settings for them. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hmargin=1in,vmargin=1in]{geometry}   % Package for helping set margins and other page layout
+\usepackage{cite}   % Package makes citations look prettier
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{pbox}
+%\usepackage{color}
+\usepackage{setspace}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{hyperref}
+
+\usetikzlibrary{arrows,shapes,positioning,calc,fit,backgrounds,decorations.markings,trees}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\tikzset{>=latex}
+\tikzset{
+  smallarrow/.style={
+    decoration={markings,mark=at position 1 with {\arrow[scale=0.8]{>}}},
+    postaction={decorate},
+    shorten >=1.5pt
+}}
+\tikzset{
+  smallarrowdub/.style={
+    decoration=
+    {
+      markings,
+      mark=at position 0.023 with {\arrow[scale=0.8]{<}},
+      mark=at position 1 with {\arrow[scale=0.8]{>}}
+    },
+    postaction={decorate},
+    shorten >=1.5pt,
+    shorten <=1.5pt
+}}
+
+

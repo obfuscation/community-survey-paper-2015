@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Community-driven Obfuscation Paper
+%
+% This is main.tex. It includes via \input other .tex files for various
+% sections. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt]{article}
+\input{packages}
+\input{macros}
+
+
+\begin{document}
+
+%\thispagestyle{empty}
+%\pagenumbering{roman}
+
+\title{Network Traffic Obfuscation and Internet Censorship Resistance}
+
+\author{The Obfuscation Research Community (TORC)}
+
+\maketitle
+
+\input{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\input{intro}
+\input{proxying}
+\input{historical}
+\input{comparison}
+\input{challenges}
+\input{shortterm}
+\input{longterm}
+
+
+
+\end{document}
