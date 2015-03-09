@@ -6,4 +6,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% We can use authnotes to directly embed comments into the paper. Feel free to
+% add your own macro, with similar color or different. One can turn off all
+% authnotes by setting flag authnotes to 0
 \def\authnotes{1}
+
+\newcounter{notectr}[section]
+\newcommand{\thenote}{\thesubsection.\arabic{notectr}\refstepcounter{notectr}}
+
+\newcommand{\note}[2]{$\ll$#1~\thenote: #2$\gg$}
+\newcommand{\tcrnote}[1]{\ifnum\authnotes=1 \textcolor{blue}{\note{TCR}{#1}}\fi}

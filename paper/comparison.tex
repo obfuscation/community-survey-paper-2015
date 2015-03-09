@@ -3,14 +3,35 @@
 %
 % This is comparison.tex. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comparative overview of existing obfuscation tools / techniques}
+\section{Comparative Overview of Existing Obfuscation Techniques}
 \label{section:comparison} 
 
-\subsection{Randomization (``Look like nothing'')}
-\subsection{Techniques targeting a specific protocol or application}
-	\subsubsection{Parrot techniques (systems that work at the ``network'' layer)}
-	\subsubsection{Decoy routing (they work at the ``transport'' layer)}
-	\subsubsection{Hide-within techniques (they work at the ``application'' layer or above)}
-\subsection{``Programmable'' techniques}
-\subsection{More...}
+\subsection{Obfuscation Approaches}
+
+\paragraph{Randomization techniques.}
+The ``look like nothing'' approach, e.g., obfsproxy and Dust. 
+
+\paragraph{Impersonation techniques.}
+
+\subparagraph{Parroting.} 	Roll own implementation to make network traffic
+approximately look like something else. Examples include Stegotorus, FTE,
+others.
+
+\subparagraph{Hide-within techniques.}
+\tcrnote{In my mind this translates to ``tunneling''. Why not use tunneling
+instead? We can also discuss the need for some parroting potentially of the
+tunneled content.}
+
+\subparagraph{Decoy routing.} 
+A special class of tunneling protocols that also cleverly use redirection. An
+example is meek. 
+
+%they work at the ``transport'' layer)}
+
+\tcrnote{Any other broad classes of obfuscation we are missing?}
+
+
+\subsection{Implementations}
+
+\tcrnote{An overview of the implementations out there }
 
