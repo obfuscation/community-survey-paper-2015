@@ -9,7 +9,18 @@
 \subsection{Obfuscation Approaches}
 
 \paragraph{Randomization techniques.}
-The ``look like nothing'' approach, e.g., obfsproxy and Dust. 
+
+Randomization techniques aim to defeat DPI machines that detect
+signatures on the content of the communication. These ``look like
+nothing'' transports bypass censorship by encrypting the application
+layer content to make it look like random bytes. These transports
+might also use padding or timing obfuscation to bypass DPI boxes that
+can detect based on session metadata. The downside of these transports
+is that they are trivially blocked by whitelists.
+
+\tcrnoteg{Do we want to overlink? We could link to DUST, obfuscated-ssh,
+obfsproxy, scramblesuit, etc. here. Or maybe we should link in the
+implementations section?}
 
 \paragraph{Impersonation techniques.}
 
@@ -33,5 +44,7 @@ example is meek.
 
 \subsection{Implementations}
 
-\tcrnote{An overview of the implementations out there }
+\tcrnote{An overview of the implementations out there.}
+
+\tcrnoteg{Maybe also a table with the above categories and how implementation fit to each category.}
 
