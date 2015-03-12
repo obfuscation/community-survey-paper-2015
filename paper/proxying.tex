@@ -26,6 +26,20 @@
 
 \tcrnote{Finding proxy IPs without making IP blacklisting easy + key negotiation}
 
+The next challenge that circumvention systems face is how to
+distribute their proxies to users. This is problematic because it's
+hard to distinguish between legitimate clients who are looking for
+proxies and the adversary who is trying to enumerate and block these
+proxies.
+
+Some systems (e.g. meek/uproxy) avoid this problem by incorporating
+the rendezvous inside their protocol, whereas other systems (obfs3,
+fteproxy, etc.) ask users to acquire proxies using various
+distribution systems that rely on rate limiting features like CAPTCHA
+or the web of trust.
+
+We consider this topic orthogonal to traffic obfuscation and will not
+examine it further on this paper.
 
 \paragraph{Network obfuscation.} 
 
